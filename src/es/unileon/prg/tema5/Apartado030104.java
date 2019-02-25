@@ -32,7 +32,7 @@ package es.unileon.prg.tema5;
          long varLong;
          float varFloat;
          double varDouble;
-         char varChar ;
+         char varChar;
          boolean varBoolean;
           
          varByte = 50;
@@ -50,8 +50,8 @@ package es.unileon.prg.tema5;
          varLong   = varInt;
          varLong   = 9223372036854775807L;
          varFloat  = varLong;
-         varByte   = varShort;
-         varShort  = varInt;
+         // varByte   = varShort; El short almacena el doble de informacion que el byte, por eso no se puede realizar la conversion
+         // varShort  = varInt; El int almacena el doble de informacion que el short, por eso no se puede realizar la conversion
       
       }
    
@@ -130,7 +130,7 @@ package es.unileon.prg.tema5;
          System.out.println("Short : " + s);    
          System.out.println("Int   : " + i);
       
-         float f = 1.3e22;   
-         System.out.println("f: " + f);    
+         double d = 1.3e22;   
+         System.out.println("d: " + d);    
       }
    }

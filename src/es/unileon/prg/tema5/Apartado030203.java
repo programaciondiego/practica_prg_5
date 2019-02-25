@@ -28,7 +28,7 @@ public class Apartado030203 extends Apartado {
 	 * <li> Compilar y ejecutar el metodo
 	 * <li> Analizar los resultados obtenidos
 	 * <li> Eliminar los comentarios del metodo <<toString()>> de la clase
-	 *      <<Persona>>
+	 *      <<Alumno>>
 	 * <li> Compilar y ejecutar
 	 * <li> Analizar los resultado obtenidos
 	 * <li> Explicar en el fichero LEEME.txt el porque de los resultados
