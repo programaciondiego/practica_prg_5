@@ -88,15 +88,15 @@ public class Apartado030101 extends Apartado {
 		//Numero de asignaturas de un curso
 		byte asignatura;
 		//Nota media de la asignatura
-		double notaMedia;
+		float notaMedia;
 		//Edad de una persona
 		short edad;
 		//Salario mensual de un empleado
-		float salario;
+		double salario;
 		//Nombre de una asignatura
 		String asignaturaNombre;
 		//Constante PI
-		double numeroPi;
+		float numeroPi;
 		//Constante VERDADERO
 		boolean constante;
 		//Portal de la direccion de una vivienda
