@@ -2,9 +2,14 @@ Practica P-VAR
 
 Alumno:
 
-Horas dedicadas: 1:45
+Horas dedicadas: 2 horas 30 minutos
 
 Problemas surgidos al realizar la practica:
+
+1º -En el apartado 030102 ejercicio 01,¿op1 tiene que ser dado por el usuario o hay que inicializarlo con un valor predeterminado? Si es asi¿Cómo?
+
+2º -Objetivo del ejercicio 02 del apartado 030102
+
 
 Respuestas a la preguntas:
 
