@@ -2,7 +2,7 @@ Practica P-VAR
 
 Alumno:
 
-Horas dedicadas: 2 horas 30 minutos
+Horas dedicadas: 2 horas 45 minutos
 
 Problemas surgidos al realizar la practica:
 
@@ -16,4 +16,8 @@ Respuestas a la preguntas:
 030101 Apartado 04:
 
 	Al ser double un tipo de dato primitivo, tiene un rango de precision finita con el objetivo de ahorra espacio en memoria, esto provoca que el resultado de la resta tenga tantos decimales, para este tipo de datos se deberia usar la clase BigDecimal de la libreria math como se recomienda en la API de Java
+
+030101 Apartado 05:
+	
+	BigDecimal tiene un rango mucho mayor que el double, y esto le permite ser más preciso a la hora de mostrar números con decimales.
 

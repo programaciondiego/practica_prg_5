@@ -89,7 +89,7 @@ public class Apartado030103 extends Apartado {
 		// Inicio modificacion
 		double radio, superficie;
 		radio=10;
-		superficie=(2*radio*Math.PI);
+		superficie=(Math.pow(radio,2)*Math.PI);
 		System.out.println("La superficie de un circulo de radio 10 unidades es "+superficie+" unidades cuadradas");
 		// Fin modificacion
 	}
