@@ -36,7 +36,20 @@ package es.unileon.prg.tema5;
          int año=1616;
       
       // Inicio modificacion
-        // Fin modificacion
+
+         cadena = cadena.append(logica);
+         System.out.println(cadena);
+
+         cadena = cadena.append(otraCadena);
+         System.out.println(cadena);
+
+         cadena = cadena.append(año);
+         System.out.println(cadena);
+
+         System.out.println("length acutal: "   + cadena.length());
+         System.out.println("capacity actual: " + cadena.capacity());
+
+      // Fin modificacion
       }
    
    /**
@@ -49,10 +62,18 @@ package es.unileon.prg.tema5;
     *	Establecer en la posicion 9 del StringBuffer una letra M.
     */
        public void ejercicio02() {
-         cabecera("02", "");
+         cabecera("02", "Insertar valores en el StringBuffer");
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
       
+         String otraCadena = "mitico ";
+
+         cadena = cadena.insert(9,otraCadena);
+
+         System.out.println(cadena.toString());
+
+         cadena = cadena.replace(9, 10, "M");
+
          System.out.println(cadena.toString());
       
       }
@@ -67,12 +88,18 @@ package es.unileon.prg.tema5;
     *	Borra la letra l.
     */
        public void ejercicio03() {
-         cabecera("03", "");
-      
+         cabecera("03", "Reemplazar y borrar en el StringBuffer");
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
       // Modificaciones
-      
+        
+         cadena = cadena.replace(cadena.indexOf("Parnaso"), cadena.length(), "Castalia");
+
          System.out.println(cadena.toString());
+
+         cadena = cadena.replace(cadena.lastIndexOf("l"), cadena.lastIndexOf("l")+1 , "" );
+
+         System.out.println(cadena.toString());
+
       }
    
    /**
@@ -83,11 +110,14 @@ package es.unileon.prg.tema5;
     * Se pide invertir el texto almacenado en cadena.
     */
        public void ejercicio04() {
-         cabecera("04", "");
+         cabecera("04", "Invertir el texto almacenado");
       
          StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
+
       // Modificaciones
       
+         cadena = cadena.reverse();
+
          System.out.println(cadena.toString());  
       }
    
@@ -100,11 +130,21 @@ package es.unileon.prg.tema5;
 	 * Mostrar el resultado por pantalla.
     */
        public void ejercicio05() {
-         cabecera("05","");
+         cabecera("05","Almacenar 'viaje desde Arcadia al Parnaso'");
       
-     	StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
-		String otraCadena=new String("Viaje desde Arcadia");
-		//modificaciones
+     	 StringBuffer cadena=new StringBuffer("Viaje al Parnaso");
+	   	 String otraCadena=new String("Viaje desde Arcadia");
+
+		//Modificaciones
+
+       StringBuffer cadenaFinalBuffer=new StringBuffer();
+       String cadenaFinal = otraCadena.toLowerCase().substring(otraCadena.indexOf("V"), otraCadena.indexOf("e")+1);
+
+       cadenaFinalBuffer = cadenaFinalBuffer.append(cadenaFinal);
+       cadenaFinalBuffer = cadenaFinalBuffer.append(otraCadena.replace("Viaje", "") + cadena.replace(cadena.indexOf("V"), otraCadena.indexOf("e")+1, ""));
+
+       System.out.println(cadenaFinalBuffer);
+
       }
    
    }

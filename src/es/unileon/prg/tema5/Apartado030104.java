@@ -35,13 +35,13 @@ package es.unileon.prg.tema5;
          char varChar;
          boolean varBoolean;
           
-         varByte = 50;
-         varShort = 1500 ;
-         varInt = 1500000 ;
-         varLong = 65000000 ;
-         varFloat = 20.0E4F ;
-         varDouble = 0.123456789e9 ;
-         varChar = 'H' ;
+         varByte    = 50;
+         varShort   = 1500 ;
+         varInt     = 1500000 ;
+         varLong    = 65000000 ;
+         varFloat   = 20.0E4F ;
+         varDouble  = 0.123456789e9 ;
+         varChar    = 'H' ;
          varBoolean = true ;
       
          varInt    = varShort;
@@ -64,7 +64,7 @@ package es.unileon.prg.tema5;
     * Imprime por pantalla el resultado de dichas conversiones
     */
        public void ejercicio02() {
-         cabecera("02", "");
+         cabecera("02", "Conversiones explicitas desde Long");
       
       // Inicio modificacion
          byte varByte;
@@ -73,6 +73,16 @@ package es.unileon.prg.tema5;
          long varLong;
       
          varLong=35000L;
+
+         varByte  = (byte)varLong;
+         varShort = (short)varLong;
+         varInt   = (int)varLong;
+
+         System.out.println("varByte = "  + varByte);
+         System.out.println("varShort = " + varShort);
+         System.out.println("varInt = "   + varInt);
+         System.out.println("varLong = "   + varLong);
+
       // Fin modificacion
       }
    
@@ -85,7 +95,7 @@ package es.unileon.prg.tema5;
     * Imprime por pantalla el resultado de dichas conversiones
     */
        public void ejercicio03() {
-         cabecera("03", "");
+         cabecera("03", "Converiones explicitas desde Float");
       
       // Inicio modificacion
          byte varByte;
@@ -95,6 +105,22 @@ package es.unileon.prg.tema5;
          float varFloat;
          double varDouble;
          varFloat= 123.1f;
+
+         varByte   = (byte)varFloat;
+         varShort  = (short)varFloat;
+         varInt    = (int)varFloat;
+         varLong   = (long)varFloat;
+         varDouble = (double)varFloat;
+
+         System.out.println("varByte = "   + varByte);
+         System.out.println("varShort = "  + varShort);
+         System.out.println("varInt = "    + varInt);
+         System.out.println("varLong = "   + varLong);
+         System.out.println("varFloat = "  + varFloat);
+         System.out.println("varDouble = " + varDouble);
+
+
+
         // Fin modificacion
       }
    
