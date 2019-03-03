@@ -143,9 +143,9 @@ package es.unileon.prg.tema5;
          String cadena = "Viaje al Parnaso";
       // Inicio modificacion
 
-         System.out.println("La letra p esta en la posicion "                             + cadena.toLowerCase().indexOf('p'));
+         System.out.println("La letra p esta en la posicion "                             + cadena.indexOf('p'));
          System.out.println("La cadena Par esta en la posicion "                          + cadena.indexOf("Par"));
-         System.out.println("La ultima ocurrencia de la letra P es "                      + cadena.toLowerCase().lastIndexOf('P'));
+         System.out.println("La ultima ocurrencia de la letra P es "                      + cadena.lastIndexOf('P'));
          System.out.println("La letra a empezando a buscar por la 3º posicion esta en la "+ cadena.toLowerCase().indexOf('a',3)+" ª posicion"); 
 
       // Fin modificacion  
